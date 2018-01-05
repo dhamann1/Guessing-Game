@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-	    <title>Number Guessing Game</title>
-		<!-- Meta Tags -->
-		<meta charset="utf-8"/>
-		<!-- Stylesheets -->
-		<link rel="stylesheet" href="styles.css">
-		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
-    <!-- JavaScript -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script type="text/javascript" src="app.js"></script>
-	</head>
-  <body>
-    
-    <div class="game">
-      <header>
-        <h1>Number Guessing Game</h1>
-      </header>
-      <form class="guessingForm">
-        <input name="user-guess" id="js-user-guess" class="text" max="100" min="1" autocomplete="off" placeholder="Enter a number 0 and 100" required/>
-        <input type="submit" id="js-guess-submit" class="button" />
-      </form>
-      <p class="responseText"></p>
-      <p class="guessCount"></p>  
-    </div>
-    
-    
-    
-  </body>
+<head>
+	<title>Number Guessing Game</title>
+	<meta charset="utf-8">
+	<link href="styles.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+	</script>
+	<script src="app.js" type="text/javascript">
+	</script>
+</head>
+<body>
+	<div class="game">
+		<header>
+			<h1>Number Guessing Game</h1>
+		</header>
+		<form class="guessingForm">
+			<input autocomplete="off" class="text" id="js-user-guess" max="100" min="1" name="user-guess" placeholder="Enter a number 0 and 100"> <input class="button" id="js-guess-submit" type="submit">
+		</form>
+		<p class="responseText"></p>
+		<p class="guessCount"></p>
+	</div>
+</body>
 </html>

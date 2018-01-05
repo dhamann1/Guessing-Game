@@ -4,20 +4,20 @@ $(document).ready(function() {
 
 	let init = () => {
 		numGuesses = 0;
-		randomNum();
 	}
 
 	let randomNum = () => {
-		console.log('Does this work')
+		console.log('randomNum is working');
 		return Math.round(Math.random() * 100);
 	}
 
 	let winnerNum = randomNum();
+	console.log(winnerNum);
 
 	let checkGuess = (guess) => {
 		numGuesses++;
 		console.log(numGuesses);
-		if (guess === winnerNum) {
+		if (guess == winnerNum) {
 			console.log(`You've Won!`);
 		} else {
 			console.log(`You've Lost!`);
@@ -29,7 +29,9 @@ $(document).ready(function() {
 		var guess = $('#js-user-guess').val();
 		$('#js-user-guess').val('');
 		checkGuess(guess);
+		$('.guessCount').text(numGuesses);
 	});
+
 
 	init();
 });
