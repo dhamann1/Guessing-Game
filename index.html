@@ -4,7 +4,7 @@
 	<title>Number Guessing Game</title>
 	<meta charset="utf-8">
 	<link href="styles.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
 	</script>
@@ -17,8 +17,10 @@
 			<h1>Number Guessing Game</h1>
 		</header>
 		<form class="guessingForm">
-			<input autocomplete="off" class="text" id="js-user-guess" max="100" min="1" name="user-guess" placeholder="Enter a number 0 and 100"> <input class="button" id="js-guess-submit" type="submit">
-		</form>
+            <input autocomplete="off" class="text" id="js-user-guess" max="100" min="1" name="user-guess" placeholder="Enter a number 0 and 5"> <input class="button" id="js-guess-submit" type="submit">
+        </form>
+        <button class="resetGame">Restart Guess Count</button>
+
 		<p class="responseText"></p>
 		<p class="guessCount"></p>
 	</div>

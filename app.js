@@ -4,11 +4,11 @@ $(document).ready(function() {
 
 	let init = () => {
 		numGuesses = 0;
+		$('.guessCount').empty().text(0)
 	}
 
 	let randomNum = () => {
-		console.log('randomNum is working');
-		return Math.round(Math.random() * 100);
+		return Math.round(Math.random() * 5);
 	}
 
 	let winnerNum = randomNum();
@@ -16,7 +16,6 @@ $(document).ready(function() {
 
 	let checkGuess = (guess) => {
 		numGuesses++;
-		console.log(numGuesses);
 		if (guess == winnerNum) {
 			console.log(`You've Won!`);
 		} else {
@@ -32,7 +31,9 @@ $(document).ready(function() {
 		$('.guessCount').text(numGuesses);
 	});
 
-
+	$('.resetGame').on('click', function () {
+		init()
+	});
 	init();
 });
 
