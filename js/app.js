@@ -34,6 +34,9 @@ $(document).ready(function() {
 	$('.resetGame').on('click', function () {
 		init()
 	});
+
+	$('#input').typed({ strings: ["Pick a Number Between 0-5"], typeSpeed: 20, backDelay: 500,}); 
+
 	init();
 });
 
